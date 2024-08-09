@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Budget Vacations: Request a Quote</title>
+        <link rel="stylesheet" href="websitelooks.css">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Spartan:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="It's Time to Get Away">
+        <meta name="author" content="Sierra Button">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        
+    </head>
+    <body>
+        <!-- Start of the page header-->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100" height="80">
+        <div>
+        <h1>Budget Vacations</h1>
+        <p>It's Time to Get Away</p>
+    </div>
+
+    </header>
+            <!-- Start of the page navigation-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="destination.html">Destinations</a>
+                    <ul class="dropdown">
+                        <li><a href="london.html">London</a></li>
+                        <li><a href="maui.html">Maui</a></li>
+                        <li><a href="newyork.html">New York City</a></li>
+                        <li><a href="paris.html">Paris</a></li>
+                        <li><a href="rome.html">Rome</a></li>
+                        <li><a href="tokyo.html">Tokyo</a></li>
+                    </ul></li>
+                    <li><a href="packages.html">Packages</a>
+                        <ul class="dropdown">
+                            <li><a href="londonpack.html">London</a></li>
+                            <li><a href="mauipack.html">Maui</a></li>
+                            <li><a href="newyorkpack.html">New York City</a></li>
+                            <li><a href="parispack.html">Paris</a></li>
+                            <li><a href="romepack.html">Rome</a></li>
+                            <li><a href="tokyopack.html">Tokyo</a></li>
+                        </ul></li>
+                    <li class="active"><a href="request.html">Request a Quote</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+          </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Request a Quote</h1>
+       <form method="get" class="myform" action="thanks.html">
+        <fieldset>
+            <legend>Customer Information</legend>
+<label>First Name* <input type="text" name="fname" required></label>
+<label>Last Name* <input type="text" name="lname" required></label>
+<label>Cell Number* <input type="tel" name="phone" required placeholder="9876543210"></label>
+<label>Email* <input type="email" name="email" required placeholder="example@example.com"></label>
+</fieldset>
+
+<fieldset>
+    <legend>Select Location</legend>
+   <label><input type="radio" name="method" value="london">London</label>
+   <label><input type="radio" name="method" value="maui">Maui</label>
+   <label><input type="radio" name="method" value="newyork">New York City</label>
+   <label><input type="radio" name="method" value="paris">Paris</label>
+   <label><input type="radio" name="method" value="rome">Rome</label>
+   <label><input type="radio" name="method" value="tokyo">Tokyo</label>
+
+</fieldset>
+<fieldset>
+    <legend>Package</legend>
+    <label><input type="checkbox" name="hotel" value="chosen">Hotel</label>
+    <label><input type="checkbox" name="flight" value="chosen">Flight</label>
+    <label><input type="checkbox" name="rental" value="chosen">Rental Vehicle</label>
+    <label><input type="checkbox" name="full" value="chosen">Full Package (Hotel, Flight, & Rental)</label>
+
+    <legend>Will You Be Traveling With Animals?</legend>
+    <label><input type="checkbox" name="yes" value="chosen">Yes</label>
+    <label><input type="checkbox" name="no" value="chosen">No</label>
+</fieldset>
+
+<fieldset>
+    <legend>How Many Travelers?</legend>
+    <label><input type="checkbox" name="single" value="chosen">1-2</label>
+    <label><input type="checkbox" name="family" value="chosen">3-5</label>
+    <label><input type="checkbox" name="more" value="chosen">6+</label>
+
+<label>Preferred Time to Be Contacted
+    <select name="time">
+        <option value="none">Please Select</option>
+        <option value="morning">10:00am-12:00pm</option>
+        <option value="noon">12:00pm-2:00pm</option>
+        <option value="afternoon">2:00pm-5:00pm</option>
+        <option value="evening">5:00pm-8:00pm</option>
+
+    </select>
+</label>
+</fieldset>
+
+<label>Please Specify Any Accommodations Required
+    <textarea name="address"></textarea>
+</label>
+
+
+<label>Please Specify Dates
+    <textarea name="address"></textarea>
+</label>
+
+<input type="submit" value="Submit Request"/>
+       </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <a href="index.html">Back to the Top</a>
+        <p>&copy; 2024 &bull; Sierra Button &bull; <a href="mailto:budgetvacations@travel.com">Email Us</a></p>
+
+    </footer>
+</body>
+</html>
